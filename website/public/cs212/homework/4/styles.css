@@ -1,0 +1,27 @@
+  .titles {
+    line-height: 2;
+    font-family: "Times New Roman", Times;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+  .header {
+    line-height: 2;
+    font-family: "Times New Roman", Times;
+    font-size: large;
+  }
+  
+  .workscited {
+    line-height: 2;
+    font-family: "Times New Roman", Times;
+    font-size: large;
+    padding-left: 22px;
+    text-indent: -22px;
+  }
+
+  .essay {
+    line-height: 2;
+    font-family: "Times New Roman", Times;
+    font-size: large;
+    text-indent: 2em;
+  }

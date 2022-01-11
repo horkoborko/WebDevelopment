@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trying Out JavaScript</title>
+  <link rel="stylesheet" href="7.css">
+</head>
+<body>
+  <div class="container">
+  <div class="header">Trying Out JavaScript: Homework Assignment #7</div>
+  <div class="panel left">
+      <a href="../index.html">Homework Assignment #1</a> <br>
+      <a href="2.html">Homework Assignment #2</a> <br>
+      <a href="3.html">Homework Assignment #3</a> <br>
+      <a href="4/index.html">Homework Assignment #4</a>
+    </div>
+  <div class="mainbody">
+    <p>Please enter a number into the form below to output its square root!</p>
+    <form onsubmit="return myFunction(this)">
+      Number: <input type="number" id="num" name="number"> <br>
+      <input type="submit" onclick="myFunction()" value="Submit">
+    </form>
+    <script>
+    function myFunction(form) {
+      let num = form.number.value;
+      let newNum = Math.sqrt(num);
+      window.alert("The square root of " + num + " is " + newNum + "!");
+    }
+    </script>
+    <p>NOTE: Result will be outputted as a window alert</p>
+  </div>
+  <div class="panel right">
+    Purchase Ghosts of Saltmarsh Dungeons & Dragons Campaign From Amazon Today!
+    <a href="https://www.amazon.com/Dungeons-Dragons-Saltmarsh-Hardcover-Adventure/dp/0786966750/ref=sr_1_52?crid=1YZUPGXXDAIST">
+      <img alt="Ghosts of Saltmarsh" src="https://images-na.ssl-images-amazon.com/images/I/514qplcfprL._SX258_BO1,204,203,200_.jpg"
+      width=400 height=400>
+    </a>
+  </div>
+  <div class="footer">
+    <p>The problem I sought to solve was how to dynamically accept, calculate,
+      and output the result.</p>
+    <p>I knew that HTML forms had to be used, but before beginning the assignment,
+      I had to research how JavaScript worked, since I never coded in it before.
+      From what I discovered, I needed script tags and a function.</p>
+    <p>Implementing the math functions and variables in JavaScript were easy enough,
+      as was making the HTML form, but I struggled a lot with passing the data between
+      HTML and JavaScript. I received help from Balaji, who pointed out that my ids
+      were off. After modifying the code to better link the HTML form with the
+      JavaScript function and vice versa, the output finally works. Additionally,
+      I originally planned on using document.write(), but I found that it was
+      not as dynamic as I wanted it to be. I ended up changing it to window.alert(),
+      because this way, the holy grail grid is preserved and numbers can be inputed
+      multiple times in a row with no need to move pages.</p>
+  </div>
+</div>
+</body>
+</html>
